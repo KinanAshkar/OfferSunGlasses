@@ -1,14 +1,12 @@
-body{
+body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #131313;
+    background-color: #ccc;
 }
-.container{
-    position: relative;
-}
-.container .card{
+
+.container .card {
     position: relative;
     width: 320px;
     height: 450px;
@@ -16,7 +14,8 @@ body{
     border-radius: 20px;
     overflow: hidden;
 }
-.container .card::before{
+
+.container .card::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -24,20 +23,22 @@ body{
     top: 0;
     left: 0;
     background-color: #521313;
-    clip-path: circle(200px at 80% 85%);
+    clip-path: circle(273px at 20%25%);
     transition: 0.5s ease-in-out;
 }
-.container .card::after{
+
+.container .card::after {
     content: "Rayban";
     position: absolute;
-    top: 30%;
+    top: 17%;
     left: -20%;
     font-size: 12em;
     font-weight: 800;
     font-style: italic;
     color: rgba(255, 255, 255, 0.04);
 }
-.container .card .imgBx{
+
+.container .card .imgBx {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -46,18 +47,21 @@ body{
     height: 220px;
     transition: 0.5s;
 }
-.container .card:hover .imgBx{
+
+.container .card:hover .imgBx {
     top: 0%;
     transform: translateY(0%);
 }
-.container .card .imgBx img{
+
+.container .card .imgBx img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotateY(-145deg);
+    transform: translate(-50%, -50%) rotateY(-145deg);
     width: 270px;
 }
-.container .card .contentBx{
+
+.container .card .contentBx {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -66,16 +70,20 @@ body{
     transition: 1s;
     z-index: 10;
 }
-.container .card:hover .contentBx{
+
+.container .card:hover .contentBx {
     height: 210px;
 }
-.container .card .contentBx h2{
+
+.container .card .contentBx h2 {
     position: relative;
     font-weight: 600;
     letter-spacing: 1px;
     color: #ffffff;
 }
-.container .card .contentBx .price, .container .card .contentBx .color{
+
+.container .card .contentBx .price,
+.container .card .contentBx .color {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,17 +92,21 @@ body{
     opacity: 0;
     visibility: hidden;
 }
-.container .card .contentBx .price{
+
+.container .card .contentBx .price {
     opacity: 1;
     visibility: visible;
     transition-delay: .5s;
 }
-.container .card:hover .contentBx .color{
+
+.container .card:hover .contentBx .color {
     opacity: 1;
     visibility: visible;
     transition-delay: .6s;
 }
-.container .card .contentBx .price h3, .container .card .contentBx .color h3{
+
+.container .card .contentBx .price h3,
+.container .card .contentBx .color h3 {
     color: #ffffff;
     font-weight: 300;
     font-size: 10px;
@@ -102,7 +114,8 @@ body{
     letter-spacing: 2px;
     margin-right: 10px;
 }
-.container .card .contentBx .price span{
+
+.container .card .contentBx .price span {
     width: 37px;
     height: 26px;
     text-align: center;
@@ -116,23 +129,28 @@ body{
     border-radius: 4px;
     cursor: pointer;
 }
-.container .card .contentBx .price span:hover{
+
+.container .card .contentBx .price span:hover {
     background-color: #ee931d;
 }
-.container .card .contentBx .color span{
+
+.container .card .contentBx .color span {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
 }
-.container .card .contentBx .color span:nth-child(2){
+
+.container .card .contentBx .color span:nth-child(2) {
     background-color: black;
 }
-.container .card .contentBx .color span:nth-child(3){
+
+.container .card .contentBx .color span:nth-child(3) {
     background-color: grey;
 }
-.container .card .contentBx a{
+
+.container .card .contentBx a {
     display: inline-block;
     padding: 10px 20px;
     background-color: #fff;
@@ -145,7 +163,8 @@ body{
     transform: translateY(50px);
     transition: 0.5s;
 }
-.container .card:hover .contentBx a{
+
+.container .card:hover .contentBx a {
     opacity: 1;
     transform: translateY(0px);
     transition-delay: 0.75s;
